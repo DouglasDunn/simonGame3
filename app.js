@@ -19,6 +19,10 @@ function showColor(num) {
 
     $("#red").css("background", "#990000");
 
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound1.mp3';
+    var audio = new Audio(wav);
+		audio.play();
+
     colorFlashId = setInterval(function() {
       flashCount++;
       $("#red").css("background", "#ff0000");
@@ -34,6 +38,10 @@ function showColor(num) {
 
     $("#green").css("background", "#009900");
 
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound2.mp3';
+    var audio = new Audio(wav);
+		audio.play();
+
     colorFlashId = setInterval(function() {
       flashCount++;
       $("#green").css("background", "#00ff00");
@@ -48,6 +56,10 @@ function showColor(num) {
 
     $("#blue").css("background", "#000099");
 
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound3.mp3';
+    var audio = new Audio(wav);
+		audio.play();
+
     colorFlashId = setInterval(function() {
       flashCount++;
       $("#blue").css("background", "#0000ff");
@@ -61,6 +73,10 @@ function showColor(num) {
     var flashCount = 0;
 
     $("#yellow").css("background", "#999900");
+
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound4.mp3';
+    var audio = new Audio(wav);
+		audio.play();
 
     colorFlashId = setInterval(function() {
       flashCount++;
@@ -233,17 +249,33 @@ function colorMouseDown(e) {
 
     $color.css("background", "#990000");
 
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound1.mp3';
+    var audio = new Audio(wav);
+		audio.play();
+
   } else if ($colorId === "green") {
 
     $color.css("background", "#009900");
+
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound2.mp3';
+    var audio = new Audio(wav);
+		audio.play();
 
   } else if ($colorId === "blue") {
 
     $color.css("background", "#000099");
 
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound3.mp3';
+    var audio = new Audio(wav);
+		audio.play();
+
   } else {
 
     $color.css("background", "#999900");
+
+    var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound4.mp3';
+    var audio = new Audio(wav);
+		audio.play();
 
   }
 
