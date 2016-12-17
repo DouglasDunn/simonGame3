@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="text-center">Simon Game</h1>
+    <div id="game">
+      <div id="optionsBoard">
+        <div id="countDiv">
+          <p>Count</p>
+          <div id="count">
+            <p class="text-center" id="countNumber"></p>
+          </div>
+        </div>
+        <div id="startStrictContainer">
+          <div id="startDiv">
+            <div id="startSensor"></div>
+            <button id="startButton">Start</button>
+          </div>
+          <div id="strictDiv">
+            <div id="strictSensor"></div>
+            <button id="strictButton">Strict Mode</button>
+          </div>
+        </div>
+      </div>
+      <div id="red" class="color col-xs-6" value="1">
+      </div>
+      <div id="green" class="color col-xs-6" value="2">
+      </div>
+      <div id="blue" class="color col-xs-6" value="3">
+      </div>
+      <div id="yellow" class="color col-xs-6" value="4">
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
